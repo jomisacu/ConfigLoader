@@ -1,0 +1,17 @@
+{
+    "name": "jomisacu/configloader",
+    "description": "A simple config system",
+    "minimum-stability": "stable",
+    "license": "proprietary",
+    "authors": [
+	{
+	    "name": "jomisacu",
+	    "email": "jomisacu.software@gmail.com"
+	}
+    ],
+    "autoload": {
+	"psr-4": {
+	    "Jomisacu\\": "includes/class"
+	}
+    }
+}
