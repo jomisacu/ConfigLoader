@@ -4,11 +4,18 @@ Provide a simple interface to handle configuration values.
 
 ## Concepts
 
-* Enviroment
+### Enviroment
 
-A environment represents a directory into directory root.
+A environment represents a directory into directory root. 
 
-* Config file
+By default the selected environment is ConfigLoader::ENV_PRODUCTION ("production"), to override this, you can put into config root directory a file named ENVIRONMENT.txt that contains a environment name, or, configure $_SERVER['ENVIRONMENT'] var through http server. For example, you can set this var on apache adding the line below:
+
+```bash
+# httpd.conf or .htaccess 
+SetEnv ENVIRONMENT 'development'
+```
+
+### Config file
 
 A config file is a pure php file that contains an array named $config with the specific scope values. Example:
 
