@@ -20,7 +20,7 @@ SetEnv ENVIRONMENT 'development'
 A config file is a pure php file that contains an array named $config with the specific scope values. Example:
 
 ```php
-<?php // $configRoot . '/' . $environment . '/' . default.php file
+<?php // [config root dir]/[selected environment]/default.php file
 
 $config['system_timezone'] = 'Americas/Santo_Domingo';
 
