@@ -4,6 +4,10 @@ Provide a simple interface to handle configuration values.
 
 ## Concepts
 
+### Config root directory
+
+It's a place to store all configuration files under environments represented by sub directories. 
+
 ### Enviroment
 
 A environment represents a directory into directory root. 
