@@ -33,6 +33,8 @@ class ConfigLoader {
 				$this->environment = $_SERVER['ENVIRONMENT'];
 			} else if (file_exists($this->root . '/ENVIRONMENT.txt')) {
 				$this->environment = trim(file_get_contents($this->root . '/ENVIRONMENT.txt'));
+			} else {
+				$this->environment = self::ENV_PRODUCTION;
 			}
 		}
 	}
