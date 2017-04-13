@@ -88,3 +88,4 @@ echo $config->get('system_timezone') . "<br />";
 // via magic method
 echo $config->system_timezone . "<br />";
 
+// ...
